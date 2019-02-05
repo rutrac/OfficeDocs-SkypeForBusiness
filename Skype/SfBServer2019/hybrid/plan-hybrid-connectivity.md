@@ -52,6 +52,8 @@ Before a user can be moved online, the user must be assigned a Skype for Busines
 To implement hybrid connectivity between your on-premises environment and Office 365 communication services, you need to meet the following infrastructure requirements:
 
 - A single on-premises deployment of Skype for Business Server or Lync Server that is deployed in a supported topology. See [Topology requirements](plan-hybrid-connectivity.md#BKMK_Topology) in this topic.
+    > [!NOTE]
+    > Every SIP domain that exists in your on-premises environment must also exist in your Office 365 tenant and vice-versa. You cannot       have some SIP domains online only and some domains on-premises only. Otherwise, presense, IM and other features will not work correctly.
 - A Microsoft Office 365 tenant with Skype for Business Online enabled.
     > [!NOTE]
     > You can use only a single tenant for a hybrid configuration with your on-premises deployment.
